@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Color</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+    <style data="test" type="text/css"></style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="colors">
+      <div class="container">
+        <div class="color hue-a">
+          <div class="heading">
+            <h2>Hex</h2>
+            <div class="controls">
+              <button class="lock">
+                <span class="material-icons-sharp"> lock_open </span>
+              </button>
+              <button class="tune">
+                <span class="material-icons-sharp"> tune </span>
+              </button>
+            </div>
+          </div>
+          <div class="sliders">
+            <div class="slider-container">
+              <p>hue</p>
+              <input
+                type="range"
+                min="0"
+                max="360"
+                step="1"
+                name="hue"
+                class="hue-input"
+                data-hue="0"
+              />
+              <p>brightness</p>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step=".01"
+                name="brightness"
+                class="bright-input"
+                data-bright="0"
+              />
+              <p>saturation</p>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step=".01"
+                name="saturation"
+                class="sat-input"
+                data-sat="0"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="color hue-b">
+          <div class="heading">
+            <h2>Hex</h2>
+            <div class="controls">
+              <button class="lock">
+                <span class="material-icons-sharp"> lock_open </span>
+              </button>
+              <button class="tune">
+                <span class="material-icons-sharp"> tune </span>
+              </button>
+            </div>
+          </div>
+          <div class="sliders">
+            <div class="slider-container">
+              <p>hue</p>
+              <input
+                type="range"
+                min="0"
+                max="360"
+                step="1"
+                name="hue"
+                class="hue-input"
+                data-hue="1"
+              />
+              <p>brightness</p>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step=".01"
+                name="brightness"
+                class="bright-input"
+                data-bright="1"
+              />
+              <p>saturation</p>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step=".01"
+                name="saturation"
+                class="sat-input"
+                data-sat="1"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="color hue-c">
+          <div class="heading">
+            <h2>Hex</h2>
+            <div class="controls">
+              <button class="lock">
+                <span class="material-icons-sharp"> lock_open </span>
+              </button>
+              <button class="tune">
+                <span class="material-icons-sharp"> tune </span>
+              </button>
+            </div>
+          </div>
+          <div class="sliders">
+            <div class="slider-container">
+              <p>hue</p>
+              <input
+                type="range"
+                min="0"
+                max="360"
+                step="1"
+                name="hue"
+                class="hue-input"
+                data-hue="2"
+              />
+              <p>brightness</p>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step=".01"
+                name="brightness"
+                class="bright-input"
+                data-bright="2"
+              />
+              <p>saturation</p>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step=".01"
+                name="saturation"
+                class="sat-input"
+                data-sat="2"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="color hue-d">
+          <div class="heading">
+            <h2>Hex</h2>
+            <div class="controls">
+              <button class="lock">
+                <span class="material-icons-sharp"> lock_open </span>
+              </button>
+              <button class="tune">
+                <span class="material-icons-sharp"> tune </span>
+              </button>
+            </div>
+          </div>
+          <div class="sliders">
+            <div class="slider-container">
+              <p>hue</p>
+              <input
+                type="range"
+                min="0"
+                max="360"
+                step="1"
+                name="hue"
+                class="hue-input"
+                data-hue="3"
+              />
+              <p>brightness</p>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step=".01"
+                name="brightness"
+                class="bright-input"
+                data-bright="3"
+              />
+              <p>saturation</p>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step=".01"
+                name="saturation"
+                class="sat-input"
+                data-sat="3"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="color hue-e">
+          <div class="heading">
+            <h2>Hex</h2>
+            <div class="controls">
+              <button class="lock">
+                <span class="material-icons-sharp"> lock_open </span>
+              </button>
+              <button class="tune">
+                <span class="material-icons-sharp"> tune </span>
+              </button>
+            </div>
+          </div>
+          <div class="sliders">
+            <div class="slider-container">
+              <p>hue</p>
+              <input
+                type="range"
+                min="0"
+                max="360"
+                step="1"
+                name="hue"
+                class="hue-input"
+                data-hue="4"
+              />
+              <p>brightness</p>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step=".01"
+                name="brightness"
+                class="bright-input"
+                data-bright="4"
+              />
+              <p>saturation</p>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step=".01"
+                name="saturation"
+                class="sat-input"
+                data-sat="4"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="color hue-f">
+          <div class="heading">
+            <h2>Hex</h2>
+            <div class="controls">
+              <button class="lock">
+                <span class="material-icons-sharp"> lock_open </span>
+              </button>
+              <button class="tune">
+                <span class="material-icons-sharp"> tune </span>
+              </button>
+            </div>
+          </div>
+          <div class="sliders">
+            <div class="slider-container">
+              <p>hue</p>
+              <input
+                type="range"
+                min="0"
+                max="360"
+                step="1"
+                name="hue"
+                class="hue-input"
+                data-hue="5"
+              />
+              <p>brightness</p>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step=".01"
+                name="brightness"
+                class="bright-input"
+                data-bright="5"
+              />
+              <p>saturation</p>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step=".01"
+                name="saturation"
+                class="sat-input"
+                data-sat="5"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="color hue-g">
+          <div class="heading">
+            <h2>Hex</h2>
+            <div class="controls">
+              <button class="lock">
+                <span class="material-icons-sharp"> lock_open </span>
+              </button>
+              <button class="tune">
+                <span class="material-icons-sharp"> tune </span>
+              </button>
+            </div>
+          </div>
+          <div class="sliders">
+            <div class="slider-container">
+              <p>hue</p>
+              <input
+                type="range"
+                min="0"
+                max="360"
+                step="1"
+                name="hue"
+                class="hue-input"
+                data-hue="6"
+              />
+              <p>brightness</p>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step=".01"
+                name="brightness"
+                class="bright-input"
+                data-bright="6"
+              />
+              <p>saturation</p>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step=".01"
+                name="saturation"
+                class="sat-input"
+                data-sat="6"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="color hue-h">
+          <div class="heading">
+            <h2>Hex</h2>
+            <div class="controls">
+              <button class="lock">
+                <span class="material-icons-sharp"> lock_open </span>
+              </button>
+              <button class="tune">
+                <span class="material-icons-sharp"> tune </span>
+              </button>
+            </div>
+          </div>
+          <div class="sliders">
+            <div class="slider-container">
+              <p>hue</p>
+              <input
+                type="range"
+                min="0"
+                max="360"
+                step="1"
+                name="hue"
+                class="hue-input"
+                data-hue="7"
+              />
+              <p>brightness</p>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step=".01"
+                name="brightness"
+                class="bright-input"
+                data-bright="7"
+              />
+              <p>saturation</p>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step=".01"
+                name="saturation"
+                class="sat-input"
+                data-sat="7"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="color hue-i">
+          <div class="heading">
+            <h2>Hex</h2>
+            <div class="controls">
+              <button class="lock">
+                <span class="material-icons-sharp"> lock_open </span>
+              </button>
+              <button class="tune">
+                <span class="material-icons-sharp"> tune </span>
+              </button>
+            </div>
+          </div>
+          <div class="sliders">
+            <div class="slider-container">
+              <p>hue</p>
+              <input
+                type="range"
+                min="0"
+                max="360"
+                step="1"
+                name="hue"
+                class="hue-input"
+                data-hue="8"
+              />
+              <p>brightness</p>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step=".01"
+                name="brightness"
+                class="bright-input"
+                data-bright="8"
+              />
+              <p>saturation</p>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step=".01"
+                name="saturation"
+                class="sat-input"
+                data-sat="8"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="library-panel">
+          <button class="library">
+            <span class="material-icons-sharp"> folder </span>
+            <p>library</p>
+          </button>
+        </div>
+        <div class="generate-panel">
+          <button class="generate">
+            <span class="material-icons-sharp"> autorenew </span>
+            <p>generate</p>
+          </button>
+        </div>
+        <div class="save-panel">
+          <button class="save">
+            <span class="material-icons-sharp"> save </span>
+            <p>save</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="popup">
+      <h3>copied to clipboard</h3>
+    </div>
+    <!-- <div class="save-container">
+      <div class="save-popup">
+        <button class="close-save">
+          <span class="material-icons-sharp"> close </span>
+        </button>
+        <h4>Give a name to you palette</h4>
+        <input type="text" maxlength="35" class="save-name" />
+        <button type="submit" class="submit-save">Save</button>
+      </div>
+      <div class="library-container">
+        <div class="library-popup">
+          <button class="close-libary">
+            <span class="material-icons-sharp"> close </span>
+          </button>
+          <h4>Pick your palette</h4>
+        </div>
+      </div>
+    </div> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"
+      integrity="sha512-yocoLferfPbcwpCMr8v/B0AB4SWpJlouBwgE0D3ZHaiP1nuu5djZclFEIj9znuqghaZ3tdCMRrreLoM8km+jIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./app.js"></script>
+    <script src="./gsap.js"></script>
+  </body>
+</html>

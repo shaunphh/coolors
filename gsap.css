@@ -1,0 +1,54 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "a b c" "d e f" "g h i";
+}
+
+.hue-a {
+  grid-area: a;
+  background-color: skyblue;
+}
+
+.hue-b {
+  grid-area: b;
+  background-color: darkseagreen;
+}
+
+.hue-c {
+  grid-area: c;
+  background-color: coral;
+}
+
+.hue-d {
+  grid-area: d;
+  background-color: gold;
+}
+
+.hue-e {
+  grid-area: e;
+  background-color: plum;
+}
+
+.hue-f {
+  grid-area: f;
+  background-color: beige;
+}
+
+.hue-g {
+  grid-area: g;
+  background-color: rgb(172, 172, 19);
+}
+
+.hue-h {
+  grid-area: h;
+  background-color: rgb(47, 179, 40);
+}
+
+.hue-i {
+  grid-area: i;
+  background-color: rgb(39, 52, 199);
+}
